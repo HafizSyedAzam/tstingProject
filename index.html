@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <nav>
+            <div class="nav-main-outer">
+                <div class="nav-logo-box">
+                    <img src="./imgs/LOGO.png" alt="Logo" />
+                </div>
+
+                <div class="nav-menu-toggle" id="nav-menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="nav-menu-container" id="nav-menu-container">
+                    <span class="nav-close-btn" id="nav-close-btn"><i class="fa-solid fa-xmark"></i></span>
+
+                    <ul class="nav-menu">
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./html/about.html">About</a></li>
+                        <li><a href="./html/gallery.html">Gallery</a></li>
+                        <li><a href="./html/athelets.html">Products</a></li>
+                        <li><a href="./html/contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button>
+                            <i class="fas fa-bag-shopping"></i>
+                        </button>
+                        <button>SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imgs/back1.jpg" class="d-block w-100" alt="Perfume 1">
+                    <div class="carousel-caption">
+                        <h1>Essence of Elegance</h1>
+                        <p>Discover the fragrance that defines your grace and sophistication.</p>
+                        <button class="hero-btn">Shop Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/back3.avif" class="d-block w-100" alt="Perfume 2">
+                    <div class="carousel-caption">
+                        <h1>Luxury in Every Note</h1>
+                        <p>A scent that speaks of timeless beauty and pure charm.</p>
+                        <button class="hero-btn">Explore Collection</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/back4.jpg" class="d-block w-100" alt="Perfume 3">
+                    <div class="carousel-caption">
+                        <h1>Unforgettable Essence</h1>
+                        <p>Perfumes crafted to leave a trail of luxury and allure.</p>
+                        <button class="hero-btn">Discover More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/back2.jpg" class="d-block w-100" alt="Perfume 4">
+                    <div class="carousel-caption">
+                        <h1>Unforgettable Essence</h1>
+                        <p>Perfumes crafted to leave a trail of luxury and allure.</p>
+                        <button class="hero-btn">Discover More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ----------------------script---------------------- -->
+    <script>
+        const menuToggle = document.getElementById("nav-menu-toggle");
+        const menuContainer = document.getElementById("nav-menu-container");
+        const closeBtn = document.getElementById("nav-close-btn");
+
+        menuToggle.addEventListener("click", () => {
+            menuContainer.classList.add("show");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menuContainer.classList.remove("show");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
